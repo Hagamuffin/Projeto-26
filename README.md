@@ -31,5 +31,12 @@ The following features were created to simulate the skills/abilities mechanics, 
 
 
 ## Next Steps:
+- Adding additional information for skill descriptions.
+- Implementing an equipment, consumables, and equipable items system that modifies skill bonuses.
+- Adding the Thought Cabinet, which allows for the internalization of thoughts that add modifiers to skills and new flavor to the mechanics.
 
 ## About the Project
+This is my first project applying JavaScript, HTML, and CSS, and the biggest one I've done so far. Its main purpose was to recreate the Disco Elysium character sheet without the help of frameworks. While the application might not be the cleanest nor the most efficient, this was a project I wanted to bring to life for a while. So, if you stumbled upon it and are willing to try it out, I hope you have fun as a deranged detective!
+<img width="2417" height="2048" alt="image" src="https://github.com/user-attachments/assets/1355c955-31f0-453b-8696-ef83dbce398b" />
+Art by: @aster_feld
+
