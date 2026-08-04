@@ -1,0 +1,147 @@
+[
+    {
+      "id": 0,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/2/29/Portrait_logic.png/revision/latest?cb=20190719153859",
+      "name": "LOGIC",
+      "description": "Wield raw intellectual power. Deduce the world."
+    },
+    {
+      "id": 1,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/72/Portrait_encyclopedia.png/revision/latest?cb=20190719153943",
+      "name": "ENCYCLOPEDIA",
+      "description": "Call upon all your knowledge. Produce fascinating trivia."
+    },
+    {
+      "id": 2,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/7b/Portrait_rhetoric.png/revision/latest?cb=20190719153912",
+      "name": "RHETORIC",
+      "description": "Practice the art of persuasion. Enjoy rigorous intellectual discourse."
+    },
+    {
+      "id": 3,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/2/28/Portrait_drama_rank1.png/revision/latest?cb=20190719153929",
+      "name": "DRAMA",
+      "description": "Play the actor. Lie and detect lies."
+    },
+    {
+      "id": 4,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/74/Portrait_conceptualization_rank1.png/revision/latest?cb=20190719153926",
+      "name": "CONCEPTUALIZATION",
+      "description": "Understand creativity. See Art in the world."
+    },
+    {
+      "id": 5,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/f/f2/Portrait_visual-calculus_rank1.png/revision/latest?cb=20190719153919",
+      "name": "VISUAL CALCULUS",
+      "description": "Reconstruct crime scenes. Make laws of physics work for the Law."
+    },
+    {
+      "id": 6,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/8/83/Portrait_volition.png/revision/latest?cb=20190719153920",
+      "name": "VOLITION",
+      "description": "Hold yourself together. Keep your Morale up."
+    },
+    {
+      "id": 7,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/2/28/Portrait_inland-empire.png/revision/latest?cb=20190719153856",
+      "name": "INLAND EMPIRE",
+      "description": "Hunches and gut feelings. Dreams in waking life."
+    },
+    {
+      "id": 8,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/9/95/Portrait_empathy.png/revision/latest?cb=20190719153939",
+      "name": "EMPATHY",
+      "description": "Understand others. Work your mirror neurons."
+    },
+    {
+      "id": 9,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/4/43/Portrait_authority.png/revision/latest?cb=20190719153921",
+      "name": "AUTHORITY",
+      "description": "Intimidate the public. Assert yourself. "
+    },
+    {
+      "id": 10,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/72/Portrait_esprit-de-Corps.png/revision/latest?cb=20190719153849",
+      "name": "ESPRIT DE CORPS",
+      "description": "Connect to the Station. Understand cop culture."
+    },
+    {
+      "id": 11,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/e/e5/Portrait_suggestion.png/revision/latest?cb=20190719153918",
+      "name": "SUGGESTION",
+      "description": "Charm men and women. Play the puppet-master."
+    },
+    {
+      "id": 12,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/0/03/Portrait_endurance.png/revision/latest?cb=20190719153945",
+      "name": "ENDURANCE",
+      "description": "Take the blows. Don’t let the world kill you."
+    },
+    {
+      "id": 13,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/75/Portrait_pain-threshold.png/revision/latest?cb=20190719153904",
+      "name": "PAIN THRESHOLD",
+      "description": "Shrug off the pain. They’ll have to hurt you more."
+    },
+    {
+      "id": 14,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/e/ea/Portrait_physical-instrument.png/revision/latest?cb=20190719153910",
+      "name": "PHYSICAL INSTRUMENT",
+      "description": "Flex powerful muscles. Enjoy healthy organs."
+    },
+    {
+      "id": 15,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/f/f9/Portrait_electrochemistry.png/revision/latest?cb=20190719153936",
+      "name": "ELECTRO CHEMESTRY",
+      "description": "Go to party planet. Love and be loved by drugs."
+    },
+    {
+      "id": 16,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/2/2d/Portrait_shivers.png/revision/latest?cb=20190719153914",
+      "name": "SHIVERS",
+      "description": "Raise the hair on your neck. Tune in to the city."
+    },
+    {
+      "id": 17,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/a/a0/Portrait_half-light.png/revision/latest?cb=20190719153851",
+      "name": "HALF LIGHT",
+      "description": "Let the body take control. Threaten people."
+    },
+    {
+      "id": 18,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/5/50/Portrait_he_coordination.png/revision/latest?cb=20190719153855",
+      "name": "HAND/EYE COORDINATION",
+      "description": "Ready? Aim and fire."
+    },
+    {
+      "id": 19,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/5/56/Portrait_perception.png/revision/latest?cb=20190719153906",
+      "name": "PERCEPTION",
+      "description": "See, hear and smell everything. Let no detail go unnoticed."
+    },
+    {
+      "id": 20,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/3/30/Portrait_reaction.png/revision/latest?cb=20190719153911",
+      "name": "REACTION SPEED",
+      "description": "The quickest to react. An untouchable man."
+    },
+    {
+      "id": 21,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/8/8a/Portrait_savoir-faire.png/revision/latest?cb=20190719153913",
+      "name": "SAVOIR FAIRE",
+      "description": "Sneak under their noses. Stun with immense panache."
+    },
+    {
+      "id": 22,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/7d/Portrait_interfacing.png/revision/latest?cb=20190719153858",
+      "name": "INTERFACING",
+      "description": "Master machines. Pick locks and pockets."
+    },
+    {
+      "id": 23,
+      "iconURL": "https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/f/ff/Portrait_composure.png/revision/latest?cb=20190719153922",
+      "name": "COMPOSURE",
+      "description": "Straighten your back. Keep your poker face."
+    }
+
+]

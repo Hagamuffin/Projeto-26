@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Parabellum</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/stats.css">
+    <link rel="stylesheet" href="../styles/newChar.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="public/favicon.ico">
+
+    <script src="../js/newChar.js" defer></script>
+</head>
+
+<body>
+
+
+    <ul class="header">
+        <ul class="p1" style="font-weight: bold;"><a href="../../index.html">PARABELLUM</a></ul>
+        <ul class="p1"><a href="about.html">about</a></ul>
+    </ul>
+    <div class="underHeader">
+    <div class="file">
+        <label for="name">Name:</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="4"
+        maxlength="20"
+        size="50" />
+           <label for="age">Age:</label>
+        <input
+        type="text"
+        id="age"
+        name="age"
+        required
+        minlength="1"
+        maxlength="3"
+        size="50" />
+           <label for="type">Cop Type:</label>
+        <input
+        type="text"
+        id="type"
+        name="type"
+        required
+        minlength="4"
+        maxlength="20"
+        size="50" />
+    </div>
+    <div class="right">
+        <button id="next"> Next ></button>
+    </div>
+    </div>
+    <div id="title"><h2>ADJUST ABILITIES:</h2> <h2 id="spare">◈ ◈ ◈ ◈ ◈ ◈ ◈ ◈</h2></div>
+    <div class="grid">
+        <div class="row">
+            <div class="level">
+                <h1 id="lvIntellect">TERRIBLE</h1>
+            </div>
+            <div class="points">
+                <button id="lInt"><</button>
+                <div id="pInt">
+                    <h1>1</h1>
+                    <h3>◈</h3>
+                </div>
+                <button id="rInt">></button>
+            </div>
+            <div class="ability">
+                <h1>INTELLECT</h1>
+                <p>Raw brain power, how smart you are.</p>
+            </div>
+        </div>
+          <hr>
+         <div class="row">
+            <div class="level">
+                <h1 id="lvPsyche">TERRIBLE</h1>
+            </div>
+            <div class="points">
+                <button id="lPsy"><</button>
+                <div id="pPsy">
+                    <h1>1</h1>
+                    <h3>◈</h3>
+                </div>
+                <button id="rPsy">></button>
+            </div>
+            <div class="ability">
+                <h1>PSYCHE</h1>
+                <p>Sensitivity, how emotionally intelligent you are.</p>
+            </div>
+        </div>
+          <hr>
+         <div class="row">
+            <div class="level">
+                <h1 id="lvPhysique">TERRIBLE</h1>
+            </div>
+            <div class="points">
+                <button id="lPhy"><</button>
+                <div id="pPhy">
+                    <h1>1</h1>
+                    <h3>◈</h3>
+                </div>
+                <button id="rPhy">></button>
+            </div>
+            <div class="ability">
+                <h1>PHYSIQUE</h1>
+                <p>Your musculature, how strong you are.</p>
+            </div>
+        </div>
+        <hr>
+         <div class="row">
+            <div class="level">
+                <h1 id="lvMotorics">TERRIBLE</h1>
+            </div>
+            <div class="points">
+                <button id="lMot"><</button>
+                <div id="pMot">
+                    <h1>1</h1>
+                    <h3>◈</h3>
+                </div>
+                <button id="rMot">></button>
+            </div>
+            <div class="ability">
+                <h1>MOTORICS</h1>
+                <p>Your senses, how agile you are.</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+}
+
+  body {
+    background-image: url(https://res.cloudinary.com/disco-elysium/images/f_auto,q_auto/v1608006758/Front-page_2986fb4bc/Front-page_2986fb4bc.png?_i=AA);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    backdrop-filter: brightness(90%);
+    height: 100%;
+    justify-content:center;
+  }
+  
+  ul {
+    background-color:#04000f;
+    background-blend-mode:overlay;
+    opacity: 85%;
+    justify-content: space-between;
+    margin: -9px;
+    padding-inline: 0;
+    padding: 1rem;
+  }
+  .p1 {
+    a{
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-size:xx-large;
+    }
+  }
+  #pI{
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-size:xx-large;
+  }
+  #pII{
+        font-weight: bold;
+        font-family:'Courier New', Courier, monospace;
+        font-size:x-large;
+  }
+  
+  .div1{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 5%;
+    padding: 5%;
+    height:25rem;
+    background-image: linear-gradient(to right, rgba(000,000,000,0.3),rgba(000,000,000,0.8), rgba(000,000,000,0.3));
+    background-color: rgba(4, 0, 15, 0.5);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size:cover;
+    backdrop-filter: blur(100px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .text{
+    animation: wiggle 2.5s infinite linear;
+  }
+  .grade{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    column-gap: 2rem;
+    height: 23rem;
+    width: 30%;
+  }
+  .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://static.wikia.nocookie.net/discoelysium_gamepedia_en/images/7/73/Portraitframe_SPEC.png/revision/latest?cb=20211228170623);
+  background-size: cover;;
+	text-align: center;
+	font-size: 1.5em;
+  border-radius: 1rem;
+  border: 0.25rem solid #ba5401c6;
+
+}
+.item > img{
+  height: 10rem;
+  mix-blend-mode:screen;
+}
+#load:hover{
+  animation: spinning 2s infinite linear, big 0.5s;
+  height: 12rem
+}
+@keyframes spinning{
+  0%{rotate: 0%};
+  100%{rotate: 360deg};
+}
+@keyframes big{
+  0%{height: 10rem};
+  100%{height: 12rem};
+}
+#plus:hover{
+  animation: big 0.5s;
+  height: 12rem;
+}

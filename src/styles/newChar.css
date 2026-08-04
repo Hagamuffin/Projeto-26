@@ -1,0 +1,114 @@
+#title{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #ffffffcd;
+    width: fit-content;
+    height: 3rem;
+    margin: 1rem;
+    padding: 0 1rem 0 1rem;
+    align-items: center;
+    font-weight: bolder;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    background-color: #240700ba;
+    width: 100%;
+    height: 10rem;
+}
+.level{
+    flex: 0 0 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.points{
+    display: flex;
+    flex:0 0 20%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+}
+.ability{
+    flex: 0 0 40%;
+    height: 100%;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    color: #fff;
+}
+.file{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(122, 46, 15, 0.818);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    width: 100%;
+}
+.underHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100;
+    justify-items: center;
+}
+#next{
+    font-weight: 100;
+    background-color: rgba(132, 46, 12, 0.918);
+    margin: 1rem;
+    height: fit-content;
+    align-items: center;
+}
+#spare{
+    color: #000;
+}
+h1{
+    font-family:'Blippo, fantasy',  monospace;
+    font-size: 6rem;
+    color: #fff;
+    line-height: 0;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    line-height: 0%;
+}
+button{
+    background: none;
+    border: none;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+button:hover{
+    opacity: 60%;
+}
+input{
+    background-color: rgba(81, 37, 23, 0.563);
+    border-color: rgba(122, 46, 15, 0.818);
+    border-radius: 0.3rem;
+}
+input[type="text"]
+{
+    font-size:1.5rem;
+    color: #fff;
+    font-weight: 300;
+}

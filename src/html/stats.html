@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Parabellum</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/stats.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="public/favicon.ico">
+
+    <script src="../js/stats.js" defer></script>
+</head>
+
+<body>
+
+
+    <ul class="header">
+        <ul class="p1" style="font-weight: bold;"><a href="../../index.html">PARABELLUM</a></ul>
+        <ul class="p1"><a href="about.html">about</a></ul>
+    </ul>
+    <div class="info">
+    </div>
+    <div class="tabela">
+        <div style="flex: 3;">
+            <div class="pvmrl">
+                <div><div class="pvmrlcont">
+                        <div id="pv"></div>
+                        <div id ="h"></div>
+                        <div style=" width:100%" class = "bar" id="bar1"></div>
+                    </div>
+                </div>
+                <div>
+                    <div><div class="pvmrlcont">
+                            <div id="mrl"></div>
+                            <div id="m"></div>
+                            <div style=" width: 100%" class = "bar" id = bar2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roll_up">
+                    <div class="die_result"> </div>
+                    <div class="roll_upBtn">
+                        <button class="btn-dice">ROLL THE DICE</button>
+                        <img src = "../content/5.svg">
+                    </div>
+                    <div class="roll_upBtn">
+                        <button class = "btn-lv">SET SIGNATURE</button>
+                        <img src="../content/signature.png"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="stat">
+                <div class = "statsp">
+                    
+                </div>
+                <div class="stats">
+                    
+                </div>
+                <div class="dis">
+                    <div class="selectedStat">
+                        
+                    </div>
+            </div>
+    </div>
+    <div class="quickTable">
+        <div>
+            <h1 style="color: #FFF; font-weight: lighter;">DIE TABLE</h1>
+                <div id="dieTable">
+                    <div>
+                    <img src="../content/5.svg"></img> <img src="../content/5.svg"></img> <p> + Base Stat + Skill = Result</p>
+                    </div>
+                    <div class="diceGrid">
+                        <div><p>6 or 7</p> <p>8 or 9</p> <p>10 or 11 </p><p>12</p> <p>13</p> <p>14</p> <p>15</p> <p>16 or 17</p> <p>18 or 19 or 20</p></div>
+                        <div><p>|</p> <p>|</p> <p>|</p> <p>|</p> <p>|</p> <p>|</p> <p>|</p> <p>|</p> <p>|</p></div>
+                        <div><p>Trivial</p> <p>Easy</p> <p>Medium</p> <p>Challenging</p> <p>Formidable</p> <p>Legendary</p> <p>Heroic</p> <p>Godly</p> <p>Impossible</p></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>

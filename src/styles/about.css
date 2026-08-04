@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+}
+
+h3{
+    background-color: #fff;
+    width:max-content;
+    padding: 1rem, 0, 4rem, 0;
+    color: #04000f;
+}
+h2{
+    background-color: #ba5401c6;
+    width:max-content;
+    padding: 1rem, 0, 4rem, 0;
+    color: #FFF;  
+}
+
+body {
+    background-image: url(https://res.cloudinary.com/disco-elysium/images/f_auto,q_auto/v1608006758/Front-page_2986fb4bc/Front-page_2986fb4bc.png?_i=AA);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    backdrop-filter: brightness(90%);
+    display: flexbox;
+    flex-direction: column;
+    height: 100%;
+    justify-content:center;
+  }
+  
+ul {
+    background-color:#04000f;
+    background-blend-mode:overlay;
+    opacity: 85%;
+    justify-content: space-between;
+    margin: -9px;
+    padding-inline: 0;
+    padding: 1rem;
+  }
+.p1 {
+    a{
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-size:xx-large;
+    }}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #08011ad3;
+    width: 80%;
+    height: 100%;
+    min-height: 100rem;
+    align-self: center;
+    margin: 5rem 3rem 0 3rem;
+    padding: 1rem;
+    color: #fff;
+    text-align: left;
+}
