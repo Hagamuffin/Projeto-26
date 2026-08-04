@@ -51,7 +51,6 @@ randomPhrase();
 //load a local .json in the localstorage 
 function load(){
 
-//re
     fileInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
     if (file===0) return;
