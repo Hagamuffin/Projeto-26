@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('click', (event) => {
     const btnSkill = event.target.closest('.btn-skill');
     const btnDice = event.target.closest('.btn-dice');
-    const btnHp = event.target.closest('#barHp');
-    const btnMoral = event.target.closest('#barMoral');
+    const btnHp = event.target.closest('.barHp');
+    const btnMoral = event.target.closest('.barMoral');
     const btnLv = event.target.closest('.btn-lv');
-    const btnNosaphed = event.target.closest('#barNhp');
-    const btnMagnesium = event.target.closest('#barNmoral');
+    const btnNosaphed = event.target.closest('.barNhp');
+    const btnMagnesium = event.target.closest('.barNmoral');
 
     const btnNosaphedSub = event.target.closest('#nosaphedSub');
     const btnNosaphedAdd = event.target.closest('#nosaphedAdd');
@@ -54,13 +54,13 @@ document.addEventListener('click', (event) => {
         rollDice(skill_id)
     }
     if (btnHp){
-        if(nhp<endurance+physique){
+        if(nhp<=skill_learn[12]+physique){
             nhp++;
             console.log(nhp);
             reloadBar("nhp",nhp);}
     }
     if (btnMoral){
-        if (nmoral<volition+psyche){
+        if (nmoral<=skill_learn[6]+psyche){
             nmoral++;
             console.log(nmoral);
             reloadBar("nmoral", nmoral);}
@@ -223,7 +223,7 @@ function outdata(val, abilityCap) {
     //hp counter
     html = '';
     html += `<div>
-                ${endurance+physique-nhp}/${endurance+physique}
+                ${skill_learn[12]+physique-nhp}/${skill_learn[12]+physique}
             </div>`;
     outhp.innerHTML = html;
 
@@ -235,20 +235,20 @@ function outdata(val, abilityCap) {
     //morale counter
     html = '';
     html += `<div>
-                ${volition+psyche-nmoral}/${volition+psyche}
+                ${skill_learn[6]+psyche-nmoral}/${skill_learn[6]+psyche}
             </div>`;
     outmoral.innerHTML = html;
 
     //hp bar
     html = '';
     i = nhp
-    for(i; i<(endurance+physique); i++){
-        html += `<div style="background-color: #eb6408"  id="barHp">
+    for(i; i<(skill_learn[12]+physique); i++){
+        html += `<div style="background-color: #eb6408"  class="barHp">
                 
             </div>`;
     }
     for(i=0; (i<nhp); i++){
-        html += `<div style="background-color: #0a101a" id="barNhp">
+        html += `<div style="background-color: #0a101a" class="barNhp">
                 
             </div>`;
     }
@@ -257,13 +257,13 @@ function outdata(val, abilityCap) {
     
     //morale bar
     html = '';
-    for(i = nmoral; i<(volition+psyche); i++){
-        html += `<div style="background-color: #19648b" id="barMoral">
+    for(i = nmoral; i<(skill_learn[6]+psyche); i++){
+        html += `<div style="background-color: #19648b" class="barMoral">
                 
             </div>`;
     }
     for(i=0; (i<nmoral); i++){
-        html += `<div style="background-color: #0a101a" id="barNmoral">
+        html += `<div style="background-color: #0a101a" class="barNmoral">
                 
             </div>`;
     }
@@ -457,12 +457,12 @@ function reloadBar(stat, nStat){
     let html = '';
     if(stat=="nhp"){
     for(i; i<(skill_learn[12]+physique); i++){
-    html += `<div style="background-color: #eb6408" id="barHp">
+    html += `<div style="background-color: #eb6408" class="barHp">
                 
             </div>`;
     }
     for(i=0; (i<nhp); i++){
-        html += `<div style="background-color: #0a101a" id="barNhp">
+        html += `<div style="background-color: #0a101a" class="barNhp">
                 
             </div>`;
     }
@@ -477,12 +477,12 @@ function reloadBar(stat, nStat){
     }
     if (stat=="nmoral"){
     for(i = nStat; i<(skill_learn[6]+psyche); i++){
-        html += `<div style="background-color: #19648b" id="barMoral">
+        html += `<div style="background-color: #19648b" class="barMoral">
                 
             </div>`;
     }
     for(i=0; (i<nmoral); i++){
-        html += `<div style="background-color: #0a101a" id="barNmoral">
+        html += `<div style="background-color: #0a101a" class="barNmoral">
                 
             </div>`;
     }

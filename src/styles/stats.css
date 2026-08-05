@@ -138,7 +138,10 @@ h3{
     display: flex;
     flex-grow: 1;
 }
-
+.barHp, .barMoral {
+    cursor: pointer;
+    pointer-events: auto;
+}
 .roll_up{
     display: flex;
     justify-content: end;
