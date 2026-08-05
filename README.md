@@ -20,8 +20,9 @@ The following features were created to simulate the skills/abilities mechanics, 
 
 
 ### Skill management and signature skill:
-- Each of the 24 skills can be leveled up, which is indicated by the filled diamonds over the icons.
+- Each of the 24 skills can be levelled up, which is indicated by the filled diamonds over the icons.
 - A signature skill is a chosen skill that receives a +1 bonus to its learned level; moreover, the learning cap of the skills from its ability is increased by one.
+- Dice roll results are calculated by adding a skill's value to the <i>2d6</i> roll, then comparing it against a table of success categories. Rolling a double 1 is a critical failure, while a double 6 is a critical success.
 <img width="501" height="171" alt="dice" src="https://github.com/user-attachments/assets/d0104a74-a87a-43db-a271-82a6e993ba60" />
 
 
@@ -33,7 +34,8 @@ The following features were created to simulate the skills/abilities mechanics, 
 ## Next Steps:
 - Adding additional information for skill descriptions.
 - Implementing an equipment, consumables, and equipable items system that modifies skill bonuses.
-- Adding the Thought Cabinet, which allows for the internalization of thoughts that add modifiers to skills and new flavor to the mechanics.
+- Adding the Thought Cabinet, which allows for the internalization of thoughts that add modifiers to skills and new flavour to the mechanics.
+- Improve browser and screen resolution compatibility
 
 ## About the Project
 This is my first project applying JavaScript, HTML, and CSS, and the biggest one I've done so far. Its main purpose was to recreate the Disco Elysium character sheet without the help of frameworks. While the application might not be the cleanest nor the most efficient, this was a project I wanted to bring to life for a while. So, if you stumbled upon it and are willing to try it out, I hope you have fun as a deranged detective!  
