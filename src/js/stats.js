@@ -78,7 +78,7 @@ document.addEventListener('click', (event) => {
         }
         else {
         levelup(skill_id, abilityCap);
-     }
+        }
         if (skill_id == 6){
             reloadBar("nmoral", nmoral);
         }
@@ -143,7 +143,7 @@ if(hovOutMagnesium){
 }
 });
 
-//fetch the data from the .json file ("yourname.json" and "skills.json")
+//fetch the data from the .json file ("char.json" and "skills.json")
 function getdata() {
     Promise.all([
         fetch(skillsUrl).then(res => res.json())
@@ -269,11 +269,11 @@ function outdata(val, abilityCap) {
     }
     outbar2.innerHTML = html;
     
-        if(signature!==null){
+    if(signature!==null){
         abilityCap[Math.floor(signature/6)]++;
         console.log(signature, Math.floor(signature/6));
         document.getElementsByClassName("roll_upBtn")[1].innerHTML = `<button class = "btn-lv">LEVEL UP</button>
-                                                                        <h2>⬦</h2>`
+                                                                      <h2>⬦</h2>`
     }
 
     //selected skill description
@@ -319,16 +319,16 @@ function outdata(val, abilityCap) {
         let lerningpoints = sheetData.skills[skillName[id]];
         points = "◈ ".repeat(lerningpoints);
         if((ele.id)<6){
-         points += "◇ ".repeat(intellect + abilityCap[0] - lerningpoints);   
+            points += "◇ ".repeat(intellect + abilityCap[0] - lerningpoints);   
         }
         if((ele.id)>=6 && (ele.id)<12){
-         points += "◇ ".repeat(psyche + abilityCap[1] - lerningpoints);   
+            points += "◇ ".repeat(psyche + abilityCap[1] - lerningpoints);   
         }
         if((ele.id)>=12 && (ele.id)<18){
-         points += "◇ ".repeat(physique + abilityCap[2] - lerningpoints);   
+            points += "◇ ".repeat(physique + abilityCap[2] - lerningpoints);   
         }
         if((ele.id)>=18){
-         points += "◇ ".repeat(motorics + abilityCap[3] - lerningpoints);   
+            points += "◇ ".repeat(motorics + abilityCap[3] - lerningpoints);   
         }
         signed = ""
         let gray = 0;
@@ -395,30 +395,29 @@ async function rollDice (skill_id){
     let modifier = atributtes[stat_id] + skill_learn[skill_id];
     let result = dice1 + dice2 + modifier;
     let resultType;
-    let color = "#ffffff00";
-    var audio = new Audio('../content/success.mp3')
-        color = "#FFF"
-        if (result<=5) resultType = "FAILURE";
-        else if (result == 6 || result == 7) resultType = "TRIVIAL";
-        else if (result == 8 || result == 9) resultType = "EASY";
-        else if (result == 10 || result == 11) resultType = "MEDIUM";
-        else if (result == 12) resultType = "CHALLENGING";
-        else if (result == 13) resultType = "FORMIDABLE";
-        else if (result == 14) resultType = "LEGENDARY";
-        else if (result == 15) resultType = "HEROIC";
-        else if (result == 16 || result == 17) resultType = "GODLY";
-        else if (result>=18) resultType = "IMPOSSIBLE";
-        if(dice1 == dice2 && dice2 == 6) {resultType = "CRITICAL SUCCESS"; color = "#38ff49";};
-        if(dice1 == dice2 && dice2 == 1) {resultType = "CRITICAL FAILURE"; color = "#ff3838";};
+    let color = "#fff";
+    var audio = new Audio('../content/success.mp3');
+    
+    if (result<=5) resultType = "FAILURE";
+    else if (result == 6 || result == 7) resultType = "TRIVIAL";
+    else if (result == 8 || result == 9) resultType = "EASY";
+    else if (result == 10 || result == 11) resultType = "MEDIUM";
+    else if (result == 12) resultType = "CHALLENGING";
+    else if (result == 13) resultType = "FORMIDABLE";
+    else if (result == 14) resultType = "LEGENDARY";
+    else if (result == 15) resultType = "HEROIC";
+    else if (result == 16 || result == 17) resultType = "GODLY";
+    else if (result>=18) resultType = "IMPOSSIBLE";
+    
+    if(dice1 == dice2 && dice2 == 6) {resultType = "CRITICAL SUCCESS"; color = "#38ff49";};
+    if(dice1 == dice2 && dice2 == 1) {resultType = "CRITICAL FAILURE"; color = "#ff3838";};
         
 
     console.log(skillsData[skill_id].name, dice1, "+", dice2, "+", modifier, "=", result);
     audio.play();
     
-    
     sliding()
-
-
+    
     setTimeout(() => {
     let html ='';
     html += `
@@ -428,26 +427,26 @@ async function rollDice (skill_id){
                         <p style="color:${color}">${resultType}</p>
                     </div>
             `;
-        outroll.innerHTML = html;  
-        }, 1000);
+    outroll.innerHTML = html;  
+    }, 1000);
 }   
 
 //set a timeout
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 //dice roll animation
 async function sliding() {
-  for (let u = 0; u <= 6; u++) {
-    await sleep(100); 
+    for (let u = 0; u <= 6; u++) {
+        await sleep(100); 
 
-    let html = `
-      <img src="../content/${Math.floor(Math.random() * 6 + 1)}.svg">
-      <img src="../content/${Math.floor(Math.random() * 6 + 1)}.svg">
-    `;
+        let html = `
+          <img src="../content/${Math.floor(Math.random() * 6 + 1)}.svg">
+          <img src="../content/${Math.floor(Math.random() * 6 + 1)}.svg">
+        `;
     
-    outroll.innerHTML = html;
+        outroll.innerHTML = html;
   }
 }
 
@@ -456,15 +455,15 @@ function reloadBar(stat, nStat){
     let i = nStat
     let html = '';
     if(stat=="nhp"){
-    for(i; i<(skill_learn[12]+physique); i++){
-    html += `<div style="background-color: #eb6408" class="barHp">
+        for(i; i<(skill_learn[12]+physique); i++){
+            html += `<div style="background-color: #eb6408" class="barHp">
                 
-            </div>`;
-    }
+                    </div>`;
+        }
     for(i=0; (i<nhp); i++){
         html += `<div style="background-color: #0a101a" class="barNhp">
                 
-            </div>`;
+                </div>`;
     }
 
     outbar1.innerHTML = html;
@@ -476,16 +475,16 @@ function reloadBar(stat, nStat){
     outhp.innerHTML = html;
     }
     if (stat=="nmoral"){
-    for(i = nStat; i<(skill_learn[6]+psyche); i++){
-        html += `<div style="background-color: #19648b" class="barMoral">
+        for(i = nStat; i<(skill_learn[6]+psyche); i++){
+            html += `<div style="background-color: #19648b" class="barMoral">
                 
-            </div>`;
-    }
-    for(i=0; (i<nmoral); i++){
-        html += `<div style="background-color: #0a101a" class="barNmoral">
+                </div>`;
+        }
+        for(i=0; (i<nmoral); i++){
+            html += `<div style="background-color: #0a101a" class="barNmoral">
                 
-            </div>`;
-    }
+                </div>`;
+        }
     outbar2.innerHTML = html;
 
     html = '';
@@ -505,23 +504,23 @@ function levelup(id, abilityCap){
     const attributes = [intellect, psyche, physique, motorics];
     const selectedStat = attributes[stat_id];
     let points ='';
-            if(skill_learn[id]>=selectedStat + abilityCap[stat_id])return;
-            skill_learn[id]++;
-            const learningpoints = skill_learn[id];
-            points = "◈ ".repeat(learningpoints);
-            points += "◇ ".repeat(selectedStat+ abilityCap[stat_id] - learningpoints);  
+    if(skill_learn[id]>=selectedStat + abilityCap[stat_id])return;
+    skill_learn[id]++;
+    const learningpoints = skill_learn[id];
+    points = "◈ ".repeat(learningpoints);
+    points += "◇ ".repeat(selectedStat+ abilityCap[stat_id] - learningpoints);  
 
-        level++;
-        document.getElementById("personal").innerHTML=`<div>
-                                                            ${name} > ${type} > ${age}y/o > lv.${level}
-                                                     </div>`
-        document.getElementById(`${id}`).innerHTML=`<h3>${points}</h3>`;
-        document.querySelector(`.btn-skill[data-index="${id}"]`)
-        .querySelector('.skill')
-        .style.filter = `grayscale(0)`;
-        document.getElementById("descriptionPoints").innerHTML=`${points}`;
-        document.getElementById("descriptionLearned").innerHTML=`<p>learned skill: +${skill_learn[id]}</p>`;
-        document.getElementById("descriptionTotal").innerHTML=`<p>${skill_learn[id]+selectedStat}</p>`;
+    level++;
+    document.getElementById("personal").innerHTML=`<div>
+                                                        ${name} > ${type} > ${age}y/o > lv.${level}
+                                                    </div>`
+    document.getElementById(`${id}`).innerHTML=`<h3>${points}</h3>`;
+    document.querySelector(`.btn-skill[data-index="${id}"]`)
+            .querySelector('.skill')
+            .style.filter = `grayscale(0)`;
+    document.getElementById("descriptionPoints").innerHTML=`${points}`;
+    document.getElementById("descriptionLearned").innerHTML=`<p>learned skill: +${skill_learn[id]}</p>`;
+    document.getElementById("descriptionTotal").innerHTML=`<p>${skill_learn[id]+selectedStat}</p>`;
     }
 
 
@@ -539,15 +538,15 @@ function sign(id){
         let points = "◈ ".repeat(skill_learn[i]) + "◇ ".repeat(atributes[Math.floor(attId)] + 1 - skill_learn[i]);
         document.getElementById(`${i}`).innerHTML=`<h3>${points}</h3>`
     }
-        let points = "◈ ".repeat(skill_learn[id]) + "◇ ".repeat(atributes[Math.floor(attId)] + 1 - skill_learn[id]);
+    let points = "◈ ".repeat(skill_learn[id]) + "◇ ".repeat(atributes[Math.floor(attId)] + 1 - skill_learn[id]);
 
-        document.querySelector(`.btn-skill[data-index="${id}"]`)
-        .querySelector('.skill')
-        .style.backgroundImage = `url('../content/signature.png'), url('${skillsData[id].iconURL}')`;
+    document.querySelector(`.btn-skill[data-index="${id}"]`)
+    .querySelector('.skill')
+    .style.backgroundImage = `url('../content/signature.png'), url('${skillsData[id].iconURL}')`;
 
-        document.getElementById("descriptionPoints").innerHTML=`${points}`;
-        document.getElementById("descriptionLearned").innerHTML=`<p>learned skill: +${skill_learn[id]}</p>`;
-        document.getElementById("descriptionTotal").innerHTML=`<p>${skill_learn[id]+atributes[attId]}</p>`;
+    document.getElementById("descriptionPoints").innerHTML=`${points}`;
+    document.getElementById("descriptionLearned").innerHTML=`<p>learned skill: +${skill_learn[id]}</p>`;
+    document.getElementById("descriptionTotal").innerHTML=`<p>${skill_learn[id]+atributes[attId]}</p>`;
 }
 
 //saves all sheet data on a .json file
@@ -594,18 +593,18 @@ function save(){
             Composure:skill_learn[23],
         }   
     }
-const saveFile = JSON.stringify(char);
-console.log(saveFile);
-const blob = new Blob([saveFile], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `${name.split(' ')[0].replace(/[^a-zA-Z0-9\s]/g, "")}`;
-  
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  
-  URL.revokeObjectURL(url);
+    const saveFile = JSON.stringify(char);
+    console.log(saveFile);
+    const blob = new Blob([saveFile], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+      
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${name.split(' ')[0].replace(/[^a-zA-Z0-9\s]/g, "")}`;
+      
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+      
+    URL.revokeObjectURL(url);
 }
